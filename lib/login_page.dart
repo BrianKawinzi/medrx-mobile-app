@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:medrx/widget/button_primary.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -19,10 +20,10 @@ class _LoginPageState extends State<LoginPage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Icon(
-              Icons.android,
+              Icons.phone_android,
               size: 100,
             ),
-            SizedBox(height: 75),
+            SizedBox(height: 46),
         //Hello again!
         Text(
           'Hello Again!',
@@ -36,7 +37,7 @@ class _LoginPageState extends State<LoginPage> {
           fontSize: 20,
           ),
         ),
-        SizedBox(height: 50),
+        SizedBox(height: 40),
 
 
         //email textfield
@@ -127,6 +128,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
           ],
         ),
+        ButtonPrimary()
       ],
         )
         ),
