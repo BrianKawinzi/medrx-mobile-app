@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
@@ -15,14 +16,19 @@ class _LoginPageState extends State<LoginPage> {
       body: SafeArea(
         child: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-             SizedBox(height: 10),
+            Icon(
+              Icons.android,
+              size: 100,
+            ),
+            SizedBox(height: 75),
         //Hello again!
-        Text('Hello Again!',
-        style: TextStyle( 
-          fontWeight: FontWeight.bold,
-          fontSize: 24,
-          ),
+        Text(
+          'Hello Again!',
+        style: GoogleFonts.bebasNeue(
+          fontSize: 52,
+        ),
           ),
           SizedBox(height: 10),
         Text('Welcome back you\'ve been missed!',
@@ -30,7 +36,7 @@ class _LoginPageState extends State<LoginPage> {
           fontSize: 20,
           ),
         ),
-        SizedBox(height: 20),
+        SizedBox(height: 50),
 
 
         //email textfield
@@ -99,9 +105,28 @@ class _LoginPageState extends State<LoginPage> {
                 )
               ),
           ),
-        )
+        ),
+        SizedBox(height: 25),
 
         //not a member register now
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'Not a member?',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+              ),
+            Text(
+              ' Register now',
+              style: TextStyle(
+                color: Colors.blue,
+                fontWeight: FontWeight.bold,
+              ),
+              ),
+          ],
+        ),
       ],
         )
         ),
